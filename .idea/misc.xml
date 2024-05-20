@@ -1,0 +1,35 @@
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/mobile-article/pom.xml" />
+        <option value="$PROJECT_DIR$/mobile-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/mobile-authentication/pom.xml" />
+        <option value="$PROJECT_DIR$/mobile_chat/pom.xml" />
+        <option value="$PROJECT_DIR$/mobile-domain/pom.xml" />
+        <option value="$PROJECT_DIR$/mobile-userInfo/pom.xml" />
+        <option value="$PROJECT_DIR$/manage-authentication/pom.xml" />
+        <option value="$PROJECT_DIR$/manage-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/manage-userinfo/pom.xml" />
+        <option value="$PROJECT_DIR$/manage-article/pom.xml" />
+        <option value="$PROJECT_DIR$/domain/pom.xml" />
+        <option value="$PROJECT_DIR$/manage-label/pom.xml" />
+        <option value="$PROJECT_DIR$/manage-tags/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/manage-article/pom.xml" />
+        <option value="$PROJECT_DIR$/manage-authentication/pom.xml" />
+        <option value="$PROJECT_DIR$/manage-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/manage-tags/pom.xml" />
+        <option value="$PROJECT_DIR$/manage-userinfo/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

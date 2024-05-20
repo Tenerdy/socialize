@@ -1,0 +1,21 @@
+server:
+  port: 80
+spring:
+  application:
+    name: mobile-gateway
+  cloud:
+    nacos:
+      server-addr: 119.91.155.238:8848
+      username: nacos
+      password: nacos
+    gateway:
+       enabled: true  # 开启网关
+       discovery:
+        locator:
+          enabled: true  # 开启动态路由
+          lower-case-service-id: true #开启小写服务名
+
+  redis:
+    host: 119.91.155.238
+    port: 6379
+    password: jhl.200111030

@@ -1,0 +1,31 @@
+server:
+  port: 8082
+spring:
+  redis:
+    host: 119.91.155.238
+    port: 6379
+    password: jhl.200111030
+  datasource:
+    url: jdbc:mysql://rm-cn-5yd36n9270005wwo.rwlb.rds.aliyuncs.com:3306/socialize?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: tenerdy
+    password: Jhl@200111030
+  application:
+    name: mobile-authentication
+  cloud:
+    nacos:
+      server-addr: 119.91.155.238:8848
+      username: nacos
+      password: nacos
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 0
+      location: D:\\uploads
+      max-file-size: 10MB
+      max-request-size: 50MB
+      resolve-lazily: false
+mybatis:
+    mapper-locations: classpath:mapper/*Mapper.xml
+
+

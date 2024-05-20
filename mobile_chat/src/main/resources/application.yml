@@ -1,0 +1,49 @@
+server:
+  port: 8084
+spring:
+  redis:
+    host: 119.91.155.238
+    port: 6379
+    password: jhl.200111030
+  datasource:
+    url: jdbc:mysql://rm-cn-5yd36n9270005wwo.rwlb.rds.aliyuncs.com:3306/socialize?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: tenerdy
+    password: Jhl@200111030
+    druid:
+      #2.连接池配置
+      #初始化连接池的连接数量 大小，最小，最大
+      initial-size: 5
+      min-idle: 5
+      max-active: 20
+      #配置获取连接等待超时的时间
+      max-wait: 60000
+      #配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
+      time-between-eviction-runs-millis: 60000
+      # 配置一个连接在池中最小生存的时间，单位是毫秒
+      min-evictable-idle-time-millis: 30000
+      validation-query: SELECT 1 FROM user
+      test-while-idle: true
+      test-on-borrow: true
+      test-on-return: false
+      # 是否缓存preparedStatement，也就是PSCache  官方建议MySQL下建议关闭   个人建议如果想用SQL防火墙 建议打开
+      pool-prepared-statements: true
+      max-pool-prepared-statement-per-connection-size: 20
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 0
+      location: D:\\uploads
+      max-file-size: 1000MB
+      max-request-size: 5000MB
+      resolve-lazily: false
+  application:
+    name: mobile-chat
+  cloud:
+    nacos:
+      server-addr: 119.91.155.238:8848 #注册中心地址
+      username: nacos #注册中心默认账号
+      password: nacos #注册中心默认密码
+
+
+
